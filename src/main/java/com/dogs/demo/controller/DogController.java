@@ -17,7 +17,7 @@ public class DogController {
 
     private static final Logger log = LoggerFactory.getLogger(DogController.class);
 
-    private DogService dogService;
+    private final DogService dogService;
 
     public DogController(DogService dogService) {
         this.dogService = dogService;

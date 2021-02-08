@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public class DogServiceImpl implements DogService {
 
-    private DogRepository repository;
+    private final DogRepository repository;
 
     public DogServiceImpl(DogRepository repository) {
         this.repository = repository;
